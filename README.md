@@ -14,7 +14,7 @@ This dockerfiles are for development, below you can see the default params:
 - post_max_size **30M**
 - upload_max_filesize **30M**
 
-The port 80 is expose on all Dockerfiles.
+The port 80 is expose.
 
 # How to use
 ```
