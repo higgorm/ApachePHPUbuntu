@@ -18,4 +18,4 @@ The port 80 is expose.
 
 # How to use
 ```
-docker run -d -v [host_path]:/var/www/html -p [host_port]:80 higormartins/apachephp7
+docker run -d -v [host_path]:/var/www/html -p [host_port]:80 higgorm/apachephp7
