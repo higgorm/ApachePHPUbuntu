@@ -16,7 +16,7 @@ The port 80 is expose
 # How to use
 ###### Using docker in command line
 ```
-docker run -d -v [host_path]:/var/www/html -p [host_port]:80 higormartins/apachephp7
+docker run -d -v [host_path]:/var/www/html -p [host_port]:80 higgorm/apachephp7
 ```
 
 ###### Using docker-compose
@@ -24,7 +24,7 @@ docker run -d -v [host_path]:/var/www/html -p [host_port]:80 higormartins/apache
 version: '3'
 services:
   webphp:
-    image: higormartins/apachephp7
+    image: higgorm/apachephp7
     ports:
       - "[host_port]:80"
     volumes:
@@ -36,7 +36,7 @@ This image has a environment variable called WEB_DOCUMENT_ROOT if you need to po
 
 ###### Using docker in command line
 ```
-docker run -d -v [host_path]:/var/www/html -p [host_port]:80 -e WEB_DOCUMENT_ROOT=public higormartins/apachephp7
+docker run -d -v [host_path]:/var/www/html -p [host_port]:80 -e WEB_DOCUMENT_ROOT=public higgorm/apachephp7
 ```
 
 ###### Using docker-compose
@@ -44,7 +44,7 @@ docker run -d -v [host_path]:/var/www/html -p [host_port]:80 -e WEB_DOCUMENT_ROO
 version: '3'
 services:
   webphp:
-    image: higormartins/apachephp7
+    image: higgorm/apachephp7
     ports:
       - "[host_port]:80"
     volumes:
