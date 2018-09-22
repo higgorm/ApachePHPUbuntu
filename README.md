@@ -1,4 +1,4 @@
-# Webservers with Apache and PHP on Ubuntu
+# Webserver's with Apache and PHP on Ubuntu
 
 Versions of PHP:
 - PHP 7
