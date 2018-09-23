@@ -2,6 +2,7 @@
 FROM ubuntu
 LABEL maintainer="Higor Martins <higgor.m@gmail.com>"
 
+
 # Instalação dos pacotes
 RUN apt-get update && apt-get install -y \
 apache2 \
@@ -18,7 +19,6 @@ php5.6-imagick \
 php5.6-mcrypt \
 php5.6-sybase \
 php5.6-xdebug \
-libapache2-mod-php5.6 \
 curl \
 phpunit \
 nano \
