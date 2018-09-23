@@ -9,7 +9,7 @@ apt-get update && \
 apt-get install -y python-software-properties software-properties-common && \
 LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
 apt-get update && apt-get install -y \
-libapache2-mod-php5.6 \
+apache2 \
 php5.6 \
 php5.6-cli \
 php5.6-common \
