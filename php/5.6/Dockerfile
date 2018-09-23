@@ -4,7 +4,11 @@ LABEL maintainer="Higor Martins <higgor.m@gmail.com>"
 
 
 # Instalação dos pacotes
-RUN apt-get update && apt-get install -y \
+RUN \
+apt-get update && \
+apt-get install -y python-software-properties software-properties-common && \
+LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php && \
+apt-get update && apt-get install -y \
 apache2 \
 php5.6 \
 php5.6-cli \
