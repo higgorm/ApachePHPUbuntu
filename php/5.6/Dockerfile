@@ -2,13 +2,6 @@
 FROM ubuntu
 LABEL maintainer="Higor Martins <higgor.m@gmail.com>"
 
-#Remover a versão atual do PHP
-RUN apt-get remove --purge php5* 
-
-#Adicionar o repositório do PHP5.6 e atualizar a listagem de pacotes
-RUN add-apt-repository ppa:ondrej/php
-RUN apt-get update
-
 # Instalação dos pacotes
 RUN apt-get update && apt-get install -y \
 apache2 \
