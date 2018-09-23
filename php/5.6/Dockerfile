@@ -1,5 +1,5 @@
 # Baixa a imagem do ubuntu
-FROM ubuntu-16:latest
+FROM ubuntu:xenial
 LABEL maintainer="Higor Martins <higgor.m@gmail.com>"
 
 
