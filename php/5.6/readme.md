@@ -1,4 +1,4 @@
-# Webserver with Apache/2.4.7 and PHP 5.6.38 on Ubuntu
+# Webserver with Apache/2.4.7 and PHP 5.6.37 on Ubuntu 16
 
 The default virtualhost has default params:
 - display_errors **on**
