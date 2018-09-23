@@ -25,7 +25,7 @@ php5.6-imagick \
 php5.6-mcrypt \
 php5.6-sybase \
 php5.6-xdebug \
-libapache2-mod-php5.6
+libapache2-mod-php5.6 \
 curl \
 phpunit \
 nano \
