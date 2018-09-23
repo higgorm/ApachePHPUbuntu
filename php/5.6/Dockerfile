@@ -9,9 +9,6 @@ RUN apt-get remove --purge php5*
 RUN add-apt-repository ppa:ondrej/php
 RUN apt-get update
 
-#Instalando PHP5.6 + Apache2
- libapache2-mod-php5.6
-
 # Instalação dos pacotes
 RUN apt-get update && apt-get install -y \
 apache2 \
