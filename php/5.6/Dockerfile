@@ -26,6 +26,8 @@ curl \
 phpunit \
 nano \
 git \
+zip \
+unzip \
 && apt-get clean && apt-get autoclean && apt-get autoremove \
 && rm -rf /var/lib/apt/lists/*
 
