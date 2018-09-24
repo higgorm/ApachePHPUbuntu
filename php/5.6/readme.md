@@ -2,7 +2,7 @@
 
 The default virtualhost has default params:
 - display_errors **on**
-- error_reporting **22527**
+- error_reporting **24567**
   - You can get the number of error_reporting on [PHP Error Reporting Wizard](http://www.bx.com.au/tools/ultimate-php-error-reporting-wizard)
 - date.timezone **America/Sao_Paulo**
 - max_execution_time **60**
