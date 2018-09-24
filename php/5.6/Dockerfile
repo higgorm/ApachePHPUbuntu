@@ -2,7 +2,6 @@
 FROM ubuntu:xenial
 LABEL maintainer="Higor Martins <higgor.m@gmail.com>"
 
-
 # Instalação dos pacotes
 RUN \
 apt-get update && \
