@@ -26,6 +26,7 @@ php5.6-xdebug \
 curl \
 phpunit \
 nano \
+git \
 && apt-get clean && apt-get autoclean && apt-get autoremove \
 && rm -rf /var/lib/apt/lists/*
 
