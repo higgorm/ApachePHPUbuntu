@@ -1,4 +1,4 @@
-# Webserver with Apache/2.4.7 and PHP 5.6.37 on Ubuntu 16 + Composer + Git
+# Webserver with Apache/2.4.7 and PHP 5.6.37 on Ubuntu 16 + Composer + Git + ZIP
 
 The default virtualhost has default params:
 - display_errors **on**
