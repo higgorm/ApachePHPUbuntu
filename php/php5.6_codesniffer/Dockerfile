@@ -71,9 +71,9 @@ WORKDIR ~/.composer/vendor/squizlabs/php_codesniffer/CodeSniffer/Standards
 RUN git clone https://github.com/wimg/PHPCompatibility.git
 
 WORKDIR ~/.composer/vendor/bin
-RUN phpcs --config-set installed_paths  ~/.composer/vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PHPCompatibility
-RUN phpcs --config-set error_severity 1
-RUN phpcs --config-set warning_severity 0
+RUN ~/.composer/vendor/bin/phpcs --config-set installed_paths  ~/.composer/vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PHPCompatibility
+RUN ~/.composer/vendor/bin/phpcs --config-set error_severity 1
+RUN ~/.composer/vendor/bin/phpcs --config-set warning_severity 0
 
 WORKDIR /var/www/html
 
