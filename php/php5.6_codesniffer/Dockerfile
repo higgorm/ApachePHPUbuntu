@@ -63,7 +63,7 @@ RUN echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc
 
 # Install PHPCodeSniffer
 RUN composer global require "squizlabs/php_codesniffer=2.*"
-RUN chmod u+x ~/.composer/vendor/squizlabs/php_codesniffer/bin/phpcs
+RUN chmod u+x ~/.composer/vendor/bin/phpcs
 
 #Configuration at PhpCompatibility
 WORKDIR ~/.composer/vendor/squizlabs/php_codesniffer/CodeSniffer/Standards
