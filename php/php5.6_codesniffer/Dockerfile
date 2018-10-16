@@ -61,6 +61,15 @@ RUN composer self-update
 WORKDIR /root
 RUN echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc
 
+WORKDIR /var/www/html
+
+COPY apache2-foreground.sh /scripts/
+RUN chmod +x /scripts/*
+
+EXPOSE 80
+
+CMD ["/scripts/apache2-foreground.sh"]
+
 # Install PHPCodeSniffer
 RUN composer global require "squizlabs/php_codesniffer=2.*"
 RUN chmod u+x ~/.composer/vendor/bin/phpcs
@@ -74,12 +83,3 @@ WORKDIR ~/.composer/vendor/bin
 RUN ~/.composer/vendor/bin/phpcs --config-set installed_paths  ~/.composer/vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PHPCompatibility
 RUN ~/.composer/vendor/bin/phpcs --config-set error_severity 1
 RUN ~/.composer/vendor/bin/phpcs --config-set warning_severity 0
-
-WORKDIR /var/www/html
-
-COPY apache2-foreground.sh /scripts/
-RUN chmod +x /scripts/*
-
-EXPOSE 80
-
-CMD ["/scripts/apache2-foreground.sh"]
