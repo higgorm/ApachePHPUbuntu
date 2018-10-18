@@ -22,6 +22,7 @@ php5.6-imagick \
 php5.6-mcrypt \
 php5.6-sybase \
 php5.6-xdebug \
+php5.6-gmp \
 curl \
 phpunit \
 nano \
